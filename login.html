@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  </style>
+  <link rel="stylesheet" href="css/login.css">
+  <script>
+    function login() {
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Retrieve the saved email and password from localStorage
+      var savedEmail = localStorage.getItem("email");
+      var savedPassword = localStorage.getItem("password");
+
+
+
+      // Check if the entered email and password match the saved values
+      if (email === savedEmail && password === savedPassword) {
+        // Redirect to tasks.html if login is successful
+        window.location.href = "tasks.html";
+      } else {
+        // Display an error message if login fails
+        alert("Invalid email or password. Please try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html" class="home-link">Home</a>
+  </div>
+
+  <div class="container">
+
+    <h1 class="title">LOG IN</h1>
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="btn" onclick="login()"><span>Log In</span></button>
+    <p class="signup-text">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+
+</body>
+</html>

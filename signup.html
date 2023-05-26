@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  </style>
+  <link rel="stylesheet" href="css/signup.css">
+  <script>
+    function signUp() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Perform validation or other necessary checks on the input data
+
+      // Save the email and password in localStorage
+      localStorage.setItem("email", email);
+      localStorage.setItem("password", password);
+
+      // Display a message indicating the account has been created
+      alert("Account created for " + firstName + " " + lastName + " with email " + email);
+    }
+
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html" class="home-link">Home</a>
+  </div>
+
+  <div class="container">
+
+    <h1 class="title">SIGN UP</h1>
+    <input type="text" id="firstName" placeholder="First Name">
+    <input type="text" id="lastName" placeholder="Last Name">
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <button id="btn" onclick="signUp()"><span>Sign Up</span></button>
+    <p class="login-text">Have an Account? <a href="login.html">LOG IN</a></p>
+  </div>
+
+</body>
+</html>

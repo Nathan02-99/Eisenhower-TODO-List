@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/tasks.css">
+  </head>
+  <body>
+
+     <div class="navbar">
+       <a href="index.html" class="home-link">Home</a>
+     </div>
+
+     <div class="sidenav">
+        <h1>Tasks</h1>
+        <button class="add-new-btn white">Add New</button>
+      <button class="urgent-important-btn green" onclick="filterTasks('urgentandImportant')">Urgent and Important</button>
+      <button class="urgent-not-Important-btn blue" onclick="filterTasks('urgentbutNotImportant')">Urgent but Not Important</button>
+      <button class="not-Urgent-Important-btn yellow" onclick="filterTasks('notUrgentbutImportant')">Not Urgent but Important</button>
+      <button class="not-Urgent-Not-Important-btn red" onclick="filterTasks('neitherUrgentnortImportant')">Neither Urgent nor Important</button>
+    </div>
+     </div>
+
+
+     <div class="content">
+       <div class="container" id="task-container">
+
+      <h1 class="title">EISENHOWER TO DO LIST</h1>
+      <input type="text" id="textbox" placeholder="Tasks for the day?">
+
+      <div class="checkboxes">
+        <label>
+          <input type="radio" name="task-category" value="urg-important"> Urgent and Important
+        </label>
+        <label>
+          <input type="radio" name="task-category" value="urg-not-important"> Urgent but Not Important
+        </label>
+        <label>
+          <input type="radio" name="task-category" value="not-urg-important"> Not Urgent but Important
+        </label>
+        <label>
+          <input type="radio" name="task-category" value="not-urg-not-important"> Neither Urgent nor Important
+        </label>
+      </div>
+
+      <button type="button" id="btn"><span>Add Task</span></button>
+
+      <hr class="line">
+
+    </div>
+
+  </div>
+  <script src="tasks.js"></script>
+</body>
+</html>

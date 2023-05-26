@@ -1,0 +1,111 @@
+html{
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  justify-content: center;
+  align-items:center;
+  width: 400px;
+  height: 500px;
+  background:black;
+  border-radius: 20px;
+  overflow-y: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#firstName, #lastName,#email, #password, #confirmPassword {
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+   background-color: #1F2937;
+   color: #ffffff;
+}
+
+
+
+#btn {
+  margin-top: 20px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  background-color: #A7A7A7;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+#btn:hover {
+  background-color:rgba(55,65,81,1);
+}
+
+#btn:hover span {
+  color: white;
+}
+
+#btn span {
+  transition: color 0.3s;
+}
+
+p{
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.login-text a {
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-link {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: white;
+  text-decoration: none;
+}
